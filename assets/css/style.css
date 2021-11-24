@@ -1,0 +1,439 @@
+@import url('reset.css');
+@import url('commons.css');
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Fugaz+One&family=Noto+Sans+KR:wght@100;400;900&family=Noto+Sans:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* header */
+header.masthead {
+    padding-top: 10rem;
+    padding-bottom: 40rem;
+    text-align: center;
+    color: #fff;
+    background-image: url('../images/header_bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+header .masthead-heading{
+    font-family: 'Boogaloo', cursive;
+    font-weight: 400;
+    font-size: 50px;
+}
+/* bike animation */
+.bikegirl{
+    position: absolute;
+    top: 308px;
+    left: 684px;
+}
+#right-wheel, #left-wheel{
+    animation: wheel 2s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#bikegirl{
+    animation: bike 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+#hair{
+    animation: hair 1s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes wheel {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes bike {
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(10deg);
+    }
+}
+
+@keyframes hair {
+    from{
+        transform: translateY(0%) rotateZ(0deg);
+    }
+    to{
+        transform: translateY(5%) rotateZ(2deg);
+
+    }
+}
+/* page-section_instruction */
+#instruction{
+    padding: 150px 0;
+}
+#instruction .indigo path{
+    color: #385168;
+}
+#instruction .yellow path{
+    color: #FFBF1F;
+}
+
+/* page-section_use */
+#use h2{
+    position: relative;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #385168;
+}
+#use h2:before {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    width: 350px;
+    height: 1px;
+    content: "";
+    background-color: #385168;
+}
+#use h2::after {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    width: 350px;
+    height: 1px;
+    content: "";
+    background-color: #385168;
+}
+/* page-section_use -1 */
+.first{
+    padding-bottom: 150px;
+    position: relative;
+}
+.first h3{
+    position: absolute;
+    font-family: 'Fugaz One', cursive;
+    font-weight: 600;
+    font-size: 300px;
+    color: #DADADA;
+    top: 143px;
+    right: -159px;
+    z-index: 99;
+}
+.first .first-title{
+    position: relative;
+    padding: 335px 0 148px 238px;
+}
+.first .first-title p{
+    font-family: 'Fugaz One', cursive;
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+}
+.first .first-title h1{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+}
+.first .first-title h1 span{
+    color: #FFBF1F;
+}
+.first .first-title::before{
+    position: absolute;
+    top: 335px;
+    bottom: 0;
+    left: 206px;
+    width: 15px;
+    height: 84px;
+    content: "";
+    background-color: #385168;
+}
+.first .first-container{
+    width: 100%;
+}
+.first-img img{
+    width: 70%;
+}
+.first-text ul li{
+    list-style: inside;
+}
+.first-text .btn{
+    border-radius: 50px;
+    z-index: 99;
+}
+.btn-outline-warning {
+    color: #FFBF1F;
+    border-color: #FFBF1F;
+}
+/* page-section_use -2 */
+.second{
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 150px;
+    position: relative;
+}
+.second h3{
+    position: absolute;
+    font-family: 'Fugaz One', cursive;
+    font-weight: 600;
+    font-size: 100px;
+    color: #DADADA;
+    top: 122px;
+    right: 115px;
+    z-index: 99;
+}
+.second .second-title{
+    position: relative;
+}
+.second .second-title::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -34px;
+    width: 15px;
+    height: 72px;
+    content: "";
+    background-color: #385168;
+}
+.second .second-title p{
+    font-family: 'Fugaz One', cursive;
+    font-size: 40px;
+    font-weight: 400;
+    color: #FFBF1F;
+}
+.second .second-title h1{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #000;
+}
+/* page-section_use -3 */
+.third{
+    position: relative;
+}
+.third h3{
+    position: absolute;
+    font-family: 'Fugaz One', cursive;
+    font-weight: 600;
+    font-size: 200px;
+    color: #DADADA;
+    top: 60px;
+    left: -46px;
+    z-index: -99;
+}
+.third .third-title{
+    position: relative;
+    width: 20%;
+    margin: 0 0 0 auto;
+    z-index: 2;
+}
+.third .third-title p{
+    font-family: 'Fugaz One', cursive;
+    font-size: 45px;
+    font-weight: 400;
+    color: #FFBF1F;
+}
+.third .third-title h1{
+    letter-spacing: 1px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: #FFBF1F;
+}
+.third .third-title h1 span{
+    color: #fff;
+}
+.third .third-title::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 291px;
+    width: 15px;
+    height: 84px;
+    content: "";
+    background-color: #385168;
+}
+.third .third-container{
+    width: 100%;
+}
+.third-img{
+    z-index: 2;
+}
+.third-img img{
+    width: 70%;
+    margin-left: 43px;
+}
+/* object */
+.object01{
+    position: absolute;
+    z-index: -1;
+    top: 1398px;
+    left: -826px;
+}
+.object03{
+    position: absolute;
+    z-index: 1;
+    top: 1988px;
+    right: -826px;
+}
+#use .box{
+    background: #DADADA;
+}
+/* page-section_purpose */
+#purpose{
+    width: 100%;
+    padding-top: 6rem;
+    background: #DADADA;
+}
+#purpose .container{
+    background: #DADADA;
+}
+#purpose .pu-text h1{
+    font-family: 'BMHANNAPro';
+    color: #fff;
+}
+#purpose .pu-text p{
+    font-family: 'BMHANNAPro';
+    color: #fff;
+}
+/* purpose section01 */
+#purpose{
+    position: relative;
+}
+.purpose01 .pu-text{
+    position: absolute;
+    width: 500px;
+    top: 165px;
+    left: 100px;
+    background: #385168;
+    z-index: 99;
+}
+.pu-text h1{
+    font-size: 22px;
+}
+/* purpose section02 */
+.container02{
+    padding-top: 25rem;
+}
+.purpose02{
+    background: #385168;
+    padding: 130px 0;
+}
+.pu-img02{
+    position: absolute;
+    top: 190px;
+    left: 85px;
+}
+/* purpose section03 */
+.text03-container{
+    position: absolute;
+    top: 1538px;
+    left: 650px;
+    z-index: 99;
+    width: 220px;
+    height: 220px;
+    background: #fff;
+}
+.text03 h1{
+    color: #000 !important;
+}
+.text03 p{
+    color: #000 !important;
+}
+.purpose03{
+    background-image: url('../images/p03.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.purpose03 .row{
+    padding: 10rem 22rem 10rem 0;
+}
+.text03 h1{
+    margin: 0 auto;
+}
+
+/* event */
+#event{
+    padding-top: 150px;
+}
+#event .e-title .black{
+    color: #000;
+    font-size: 55px;
+    font-family: 'SBAggroM';
+}
+#event .e-title .green{
+    color: #49BC81;
+}
+#event .e-period div{
+    background: #49BC81;
+    border-radius: 20px;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+}
+#event p{
+    font-size: 18px;
+    font-family: 'Noto Sans', sans-serif;
+}
+#event .e-text{
+    border: 1px solid #49BC81;
+    border-radius: 20px;
+    font-family: 'SBAggroL';
+    line-height: normal;
+}
+#event .e-text h1{
+    font-size: 20px;
+}
+#event ul li{
+    font-family: 'Noto Sans', sans-serif;
+}
+.event_image{
+    padding-top: 10rem;
+    padding-bottom: 50rem;
+    color: #fff;
+    background-image: url('../images/event_bg2.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* footer */
+footer img{
+    width: 50%;
+}
+
+@media (min-width: 1200px){
+    #use .container{
+        max-width: 1400px;
+    }
+}
+
+@media (max-width: 1025px){
+    .bikegirl {
+        left: 361px;
+    }
+    #use .use-container h3{
+        display: none;
+    }
+    #use h2::before {
+        width: 250px;
+    }
+    #use h2::after {
+        width: 250px;
+    }
+}
+@media (max-width: 769px){
+    .bikegirl {
+        top: 322px;
+        left: 240px;
+    }
+    .object01, .object03{
+        display: none;
+    }
+}
